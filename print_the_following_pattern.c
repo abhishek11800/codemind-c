@@ -4,13 +4,17 @@ int main()
     int i,j,n;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
-    {
+    { 
+        for(int k=n-i;k>0;k--)
+        {
+        printf(" ");
+        }
         for(j=1;j<=n;j++)
         {
-            if(i+j==n+1||i==j)
-            printf("x");
+            if(i==1||i==n||j==1||j==n)
+            printf("*");
             else
-            printf("0");
+            printf(" ");
         }printf("
 ");
     }
